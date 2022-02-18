@@ -2,7 +2,7 @@
   "name": "server",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "concurrently": "^7.0.0",
@@ -14,8 +14,8 @@
   },
   "devDependencies": {},
   "scripts": {
-    "start": "node index.js",
-    "server": "nodemon index.js",
+    "start": "node server.js",
+    "server": "nodemon server.js",
     "heroku-postbuild": "npm run build"
   },
   "keywords": [],
