@@ -1,11 +1,16 @@
 const express = require('express')
 const mongoose = require('mongoose')
+const path = require('path');
 
 const app = express()
+
+app.use(express.static(path.join(__dirname, 'client/build')));
+
+app.get('*', (req,res) =>{
+    res.sendFile(path.join(__dirname+'/client/build/index.html'));
+});
+
 const PORT = process.env.PORT || 5000
-
-app.use(express.static('public'))
-
 
 app.use(express.json({extended: true}))
 app.use('/api/auth', require('./routers/authRouter'))
