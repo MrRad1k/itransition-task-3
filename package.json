@@ -16,7 +16,7 @@
   "scripts": {
     "start": "node index.js",
     "server": "nodemon index.js",
-    "heroku-postbuild": "npm run build"
+    "heroku-postbuild": "cd client && npm install && npm install"
   },
   "keywords": [],
   "author": "",
