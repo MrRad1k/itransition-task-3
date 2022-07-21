@@ -1,5 +1,6 @@
 {
   "name": "server",
+  "engines" : { "node" : "14.18.1" },
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
