@@ -1,8 +1,6 @@
 {
   "name": "client",
-  "engines": {
-    "node": "14.18.1"
-  },
+    "engines" : { "node" : "14.18.1" },
   "version": "0.1.0",
   "private": true,
   "proxy": "http://localhost:5000",

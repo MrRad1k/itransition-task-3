@@ -64,8 +64,8 @@ class MainPage extends Component {
             if (user.isChecked === true) {
                 axios.delete(`/api/auth/${user._id}`)
                     .then(res => {
-                        localStorage.removeItem('userData')
-                        window.location.reload();
+                        //localStorage.removeItem('userData')
+                        //window.location.reload();
                         this.setState({
                             List: this.state.List.filter((item) => item._id !== user._id)
                         })
@@ -85,8 +85,8 @@ class MainPage extends Component {
                 axios.put(`/api/auth/${user._id}`)
                     .then(res => {
                         user.status = true;
-                        localStorage.removeItem('userData')
-                        window.location.reload()
+                        //localStorage.removeItem('userData')
+                        //window.location.reload()
                         this.setState({
                             List: this.state.List
                         })
